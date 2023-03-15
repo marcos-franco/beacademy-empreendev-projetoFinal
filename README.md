@@ -11,10 +11,10 @@ Funções, Aplicação do Framework e VueJS.
 
 
 ### 🛠 Projeto Final:
-- Landing page - Pizzaria
+- Landing page - BellaPizzeria
 
 ### Status do Projeto:
-30% concluido! Favor aguardar, pois estou trabalhando para concluir. 
+100% concluido! 
 
 ### Autor: Marcos Franco
 Projeto desenvolvido por [Marcos Franco](https://www.linkedin.com/in/marcosfranco-5b1a8a111/)

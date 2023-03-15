@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://fonts.google.com/specimen/Shantell+Sans" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="style.css">
+    <title>LandingPage-BellaPizzeria</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="logo">
+            <img src="./img/logo-bellaPizzeria-16.jpg" alt="logo-pizzeria">
+             <h3>BellaPizzeria</h3>                            
+        </div>
+        <ul class="list-menu">
+            <li><a href="#">INÍCIO</a></li>
+            <li><a href="#cardapio">CARDÁPIO</a></li>
+            <li><a href="#sobrenos">SOBRE NÓS</a></li>
+            <li><a href="#contatos">CONTATOS</a></li>
+            <li><a href="#mapa">LOCALIZAÇÃO</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>  
+    </header>
+
+    <section class="first-section">        
+        <div class="conteudo-principal">
+            <h1>Hoje eu só quero que o dia termine em pizza!!!</h1>
+            <h2>Pizza boa é pizza dividida com os amigos!</h2>
+            
+            <div class="btn">
+                <button class="pedido">Faça já o seu pedido!!!</button>                
+            </div>
+        </div>    
+    </section>    
+
+    <section class="cardapio section-type1" id="cardapio">
+        <div class="container">
+            <h1 class="title">Cardápio - Pizzas salgadas e doces</h1>
+            <div class="itens-cardapio" id="vue-root">
+                <div v-for="(pizza, i) in pizzas" class="item">
+                    <img :src="pizza.image" :alt="pizza.name">
+                    
+                    <p><strong>Ingredientes:</strong><br>
+                        {{pizza.ingredients_description}}</p>
+
+                    <table class="tabela-precos">
+                        <caption>{{pizza.name}}</caption>
+                        <thead>
+                            <tr>
+                                <th>Pequena</th>
+                                <th>Média</th>
+                                <th>Grande</th>
+                                <th>Família</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>R$ {{pizza.prices[0]}}</td>
+                                <td>R$ {{pizza.prices[1]}}</td>
+                                <td>R$ {{pizza.prices[2]}}</td>
+                                <td>R$ {{pizza.prices[3]}}</td>
+                            </tr>                         
+                        </tbody>
+                    </table> 
+                </div>
+            </div>
+        </div>               
+    </section>
+
+    <section class="sobre-nos section-type1" id="sobrenos">
+        <div class="container">
+            <div class="contentsobre">
+                <h1 class="title">Sobre nós</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid natus fuga architecto tenetur magnam voluptatem debitis magni, vitae blanditiis animi assumenda veniam optio omnis similique aspernatur deserunt ducimus culpa id.
+                Dolor voluptatibus consequatur, distinctio architecto accusantium eius tenetur officiis vero doloribus iusto quo. Explicabo unde eum accusamus sit possimus voluptatum non nemo quod, minima mollitia autem rerum magni facere cupiditate.
+                Eum a rem harum neque? Et minus debitis possimus excepturi, quisquam aliquam ducimus iure dolore doloremque accusamus natus veritatis esse quas. Harum accusantium, tenetur dolorum quidem dicta quas eius. Iste.
+                Ratione iusto dolore dolor nisi illo voluptate est itaque, facilis exercitationem cumque ipsam magnam distinctio molestias numquam nesciunt similique consectetur architecto quisquam ipsum enim at natus. Quod aut voluptatum quo.
+                Nobis deleniti doloribus illd dolorum tenetur inventore architecto at quam repellendus, quidem earum nisi! Similique vel natus perferendis illo, sapiente harum molestiae blanditiis architecto.</p>
+            </div>
+        </div>    
+    </section>
+
+    <section class="mapa section-type1" id="mapa">
+        <div class="container">
+            <h1 class="title">Localização</h1>
+            <p> A BellaPizeria está localizado no bairro de campo grande-RJ.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.602681216591!2d-43.57628348448736!3d-22.928021244394575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be43c1510be23%3A0xbab42fc3859bfdbf!2sPark%20Shopping%20Campo%20Grande!5e0!3m2!1spt-BR!2sbr!4v1678754605686!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>    
+
+    <section class="contatos section-type1" id="contatos">
+        <h1 class="title">Contatos</h1>
+        <div class="container">
+            <form>
+                <label for="nomesobrenome">Nome:</label>
+                <input type="text" id="nome" class="input-padrao" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+    
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
+    
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                    
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                </fieldset>
+                
+    
+                <label class="checkbox"><input type="checkbox">Gostaria de receber novidades por email?</label>
+    
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+            <div class="contatos-secao"> 
+                <div>              
+                   <a href="https://www.instagram.com/marcos.franco_rio/" target="_blank">
+                   <i class="fab fa-instagram"></i>
+                   <span>instagram</span>
+                   </a>                                              
+                </div>
+                <div>
+                   <a href="https://wa.me/5521993370486" target="_blank">
+                   <i class="fas fa-phone"></i>
+                   <span>WhatSapp</span> 
+                   </a>               
+                </div>
+                <div>
+                   <a href="https://www.facebook.com/marcos.franco.5688" target="_blank">
+                   <i class="fab fa-facebook-f"></i>
+                   <span>facebook</span>
+                   </a>
+                </div>
+            </div>       
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Desenvolvido por: Marcos Franco - 2023</p>        
+    </footer>
+    
+    <script src="./vue.global.prod.js" defer></script>
+    <script src="./script.js" defer></script>    
+</body>
+</html> 

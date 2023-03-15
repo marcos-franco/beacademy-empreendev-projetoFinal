@@ -1,0 +1,107 @@
+[
+    {
+      "id": 1,
+      "name": "Calabresa",
+      "image": "img/01-calabresa-600x500.png",
+      "prices": ["24,90", "34,90", "44,90", "54,90"],
+      "ingredients_description": "Molho, muçarela, calabresa, cebola fatiada e orégano."
+    },
+    {
+      "id": 2,
+      "name": "Margherita",
+      "image": "img/02-margherita-600x500.png",
+      "prices": ["22,90", "32,90", "42,90", "52,90"],
+      "ingredients_description": "Molho, muçarela, tomates em rodelas e manjericão.​"
+    },
+    {
+      "id": 3,
+      "name": "Camarão c/Catupiry",
+      "image": "img/03-camarão-catupiry-600x500.png",
+      "prices": ["27,90", "37,90", "47,90", "57,90"],
+      "ingredients_description": "Molho, muçarela, camarões ao molho, catupiry e orégano."
+    },
+    {
+      "id": 4,
+      "name": "Portuguesa",
+      "image": "img/04-portuguesa-600x500.png",
+      "prices": ["24,90", "34,90", "44,90", "54,90"],
+      "ingredients_description": "Molho, muçarela, cebola, calabresa, ovos, presunto, azeitonas e orégano."
+    },
+    {
+      "id": 5,
+      "name": "Frango c/Bacon e Catupiry",
+      "image": "img/05-frango-bacon-600x500.png",
+      "prices": ["27,90", "37,90", "47,90", "57,90"],
+      "ingredients_description": "Molho, muçarela, frango, bacon, catupiry e orégano."
+    },
+    {
+      "id": 6,
+      "name": "Lombo c/Catupiry",
+      "image": "img/06-lombo-com-catupiry-600x500.png",
+      "prices": ["27,90", "37,90", "47,90", "57,90"],
+      "ingredients_description": "Molho, muçarela, lombo tipo canadense, catupiry e orégano."
+    },
+    {
+      "id": 7,
+      "name": "Pepperoni",
+      "image": "img/07-pepperoni-600x500.png",
+      "prices": ["24,90", "34,90", "44,90", "54,90"],
+      "ingredients_description": "Molho, muçarela, salame pepperoni fatiado e orégano."
+    },
+    {
+      "id": 8,
+      "name": "Siciliana",
+      "image": "img/08-siciliana1-600x500.png",
+      "prices": ["24,90", "34,90", "44,90", "54,90"],
+      "ingredients_description": "Molho, muçarela, calabresa, cebola fatiada, parmesão e orégano."
+    },
+    {
+      "id": 9,
+      "name": "Tomates Secos c/Rúcula",
+      "image": "img/09-tomates-secos-rucula-600x500.png",
+      "prices": ["24,90", "34,90", "44,90", "54,90"],
+      "ingredients_description": "Molho, muçarela, tomates secos, rúcula e orégano."
+    },
+    {
+      "id": 10,
+      "name": "Palmito",
+      "image": "img/10-palmito-600x500.png",
+      "prices": ["24,90", "34,90", "44,90", "54,90"],
+      "ingredients_description": "Molho, muçarela, palmito, tomates em rodelas e orégano"
+    },
+    {
+      "id": 11,
+      "name": "Parma c/Gorgonzola",
+      "image": "img/11-parma-gorgonzola-600x500.png",
+      "prices": ["27,90", "37,90", "47,90", "57,90"],
+      "ingredients_description": "Molho, muçarela, presunto tipo parma, gorgonzola e orégano."
+    },
+    {
+      "id": 12,
+      "name": "Muçarela",
+      "image": "img/12-mussarela-600x500.png",
+      "prices": ["22,90", "33,90", "42,90", "52,90"],
+      "ingredients_description": "Molho, muçarela, tomate em rodelas e orégano."
+    },
+    {
+      "id": 13,
+      "name": "Chocolate c/ M&M's",
+      "image": "img/13-chocolatePreto-mms-600x500.png",
+      "prices": ["27,90", "37,90", "47,90", "57,90"],
+      "ingredients_description": "Muçarela, chocolate e M&M`s."
+    },
+    {
+      "id": 14,
+      "name": "Banana",
+      "image": "img/14-banana-600x500.png",
+      "prices": ["24,90", "34,90", "44,90", "54,90"],
+      "ingredients_description": "Muçarela, banana, açúcar e canela."
+    },
+    {
+      "id": 15,
+      "name": "Chocolate Branco",
+      "image": "img/15-chocolate-branco-600x500.png",
+      "prices": ["27,90", "37,90", "47,90", "57,90"],
+      "ingredients_description": "Muçarela, chocolate branco."
+    }
+  ]
