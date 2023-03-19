@@ -12,7 +12,7 @@ Funções, Aplicação do Framework e VueJS.
 
 ### 🛠 Projeto Final:
 - Projeto: Landing page - BellaPizzeria
-- Site do projeto: [BellaPizzeria](https://marcos-franco.github.io/beacademy-empreendev-projetoFinal/)
+- [🔗 Clique aqui para acessar a Landing page Bella Pizzeria:](https://marcos-franco.github.io/beacademy-empreendev-projetoFinal/)
 
 ### Status do Projeto:
 100% concluido! 
